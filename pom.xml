@@ -35,18 +35,32 @@
 			<version>3.1.0-SNAPSHOT</version>
 		</dependency>
 
-		<!-- jdbc for spring data -->
-		<!-- <dependency>
+		<!-- jpa for spring data -->
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jdbc</artifactId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 			<version>3.1.0-SNAPSHOT</version>
-		</dependency> -->
+		</dependency>
+
+		<!-- lombok for data -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.26</version>
+		</dependency>
 
 		<!-- mysql connector  -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.33</version>
+		</dependency>
+
+		<!-- db migration tool -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+			<version>9.17.0</version>
 		</dependency>
 	</dependencies>
 

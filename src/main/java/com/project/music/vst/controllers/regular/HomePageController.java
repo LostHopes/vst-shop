@@ -1,4 +1,4 @@
-package com.project.music.vst.pages;
+package com.project.music.vst.controllers.regular;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class Home {
+public class HomePageController {
 
     @Autowired
     private ResourceLoader resourceLoader;
