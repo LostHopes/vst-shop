@@ -1,10 +1,9 @@
 package com.project.music.vst.dto;
 
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
@@ -24,4 +23,8 @@ public class Products {
     @ManyToOne
     @JoinColumn(name = "salerId", referencedColumnName = "id")
     private Users users;
+    // @ManyToOne
+    // @JoinColumn(name = "order_id")
+    // private Orders order;
+
 }

@@ -1,8 +1,9 @@
 package com.project.music.vst.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 import com.project.music.vst.dto.Users;
 
-public interface UserRepository extends JpaRepository<Users, Long> {
-}
+@Repository
+public interface UserRepository extends JpaRepository<Users, Long> {}
